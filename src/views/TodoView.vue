@@ -1,5 +1,10 @@
 <template>
-  <h2>TODO一覧</h2>
+  <head>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+  </head>
+  <div class="text-center">
+    <h2>TODO一覧</h2>
+  </div>
   <ul>
     <todo-item
       v-for="todo in todoStore.state.todos"
@@ -10,7 +15,9 @@
     >
     </todo-item>
   </ul>
-  <router-link to="/new">新規作成</router-link>
+  <div class="center">
+    <router-link to="/new">新規作成</router-link>
+  </div>
 </template>
 
 <script lang="ts">
@@ -31,11 +38,11 @@ export default defineComponent({
 
     const router = useRouter()
 
-    const clickDelete = (id: number) => { // ③
+    const clickDelete = (id: number) => {
       todoStore.deleteTodo(id)
     }
 
-    const clickTitle = (id: number) => { // ④
+    const clickTitle = (id: number) => {
       router.push(`/edit/${id}`)
     }
 
@@ -47,3 +54,9 @@ export default defineComponent({
   }
 })
 </script>
+
+<style scoped>
+.center {
+  text-align: center;
+}
+</style>

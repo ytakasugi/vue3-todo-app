@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="table">
     <div>
       <span class="title" @click="clickTitle">{{ todo.title }}</span>
       <span class="status" :class="todo.status">{{ todo.status }}</span>
