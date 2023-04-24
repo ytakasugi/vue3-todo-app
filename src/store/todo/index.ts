@@ -33,7 +33,7 @@ const state = reactive<TodoState>({
   todos: mockTodo
 })
 
-function initializeTodo (todo: Params) {
+const initializeTodo = (todo: Params) => {
   const date = new Date()
   return {
     id: date.getTime(),
