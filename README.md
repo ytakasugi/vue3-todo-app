@@ -45,3 +45,4 @@ node_modules/.bin/eslint --fix --ext .js,.vue --ignore-path .gitignore .
 * [TypeScript で Vue を使用する](https://ja.vuejs.org/guide/typescript/overview.html)
 * [Vue 3 Composition API を使ってみよう](https://qiita.com/azukiazusa/items/1a7e5849a04c22951e97)
 * [Vue.jsをかじる本](https://zenn.dev/sdkfz181tiger/books/363d20b1e591fc)
+* [Vue Router 4基礎から理解(Composition API＋Vite環境)](https://reffect.co.jp/vue/vite-vue-router)
